@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header-row">
+      <h1>⏱ Stopwatch</h1>
+      <button id="themeToggle" aria-label="Toggle dark/light mode">🌙</button>
+    </div>
+    <div class="stopwatch-display" id="display">00:00:00.000</div>
+
+    <div class="lap-stats">
+      <span id="fastestLap">Fastest: --</span>
+      <span id="slowestLap">Slowest: --</span>
+    </div>
+
+    <div class="buttons">
+      <button id="startStopBtn">Start</button>
+      <button id="lapBtn">Lap</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="laps-container">
+      <h2>Lap Times</h2>
+      <ul id="laps"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
